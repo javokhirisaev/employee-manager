@@ -21,3 +21,9 @@ class Manager extends Employee {
     return `${this.name} manages the ${this.department} department with a team of ${this.teamSize} people.`;
   }
 }
+
+//Step4
+const employee1 = new Employee("Ali", "Sales");
+const employee2 = new Employee("Fatima", "HR");
+const manager1 = new Manager("Hassan", "Engineering", 10);
+const manager2 = new Manager("Layla", "Marketing", 5);
