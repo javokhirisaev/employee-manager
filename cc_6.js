@@ -27,3 +27,17 @@ const employee1 = new Employee("Ali", "Sales");
 const employee2 = new Employee("Fatima", "HR");
 const manager1 = new Manager("Hassan", "Engineering", 10);
 const manager2 = new Manager("Layla", "Marketing", 5);
+
+//Step5
+class Company {
+  constructor() {
+    this.employees = [];
+  }
+  addEmployee(employee) {
+    this.employees.push(employee);
+  }
+  listEmployees() {
+    console.log("Employee List:");
+    this.employees.forEach(emp => console.log(emp.describe()));
+  }
+}
